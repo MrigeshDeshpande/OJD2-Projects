@@ -1,0 +1,32 @@
+body{
+    background-color: #000000;
+    margin: 0;
+    padding: 20px;
+}
+
+.gallery{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px,1fr));
+    gap:15px;
+    max-width: 1200px;
+    margin: 0;
+}
+
+.photo{
+    overflow: hidden;
+    border-radius: 8px;
+    aspect-ratio: 4/5;
+}
+
+.photo img{
+    width: 100%;
+    height: 100%;
+    object-fit:cover;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.photo img:hover{
+    transform: scale(1.05);
+    filter: brightness(1.1);    
+}

@@ -1,0 +1,47 @@
+body{
+    display: flex;
+    background-color: #b7b3b3;
+    justify-content:center;
+    align-items: center;
+    margin: 0;
+}
+
+.coupon-container{
+    text-align: center;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px;
+    margin-top: 20%;
+}
+
+.coupon-box{
+    display: font-family;
+    align-items: center;
+    justify-content: space-between;
+    border: 2px dashed rgb(79, 150, 215);
+
+}
+
+#coupon-code{
+    font-weight: bold;
+    font-size: 1.3rem;
+    color: red;
+    letter-spacing: 2px;
+    margin-right: 20px;
+}
+
+.copy-btn{
+    background-color: #070fef;
+    color: white;
+    border: none;
+    padding: 8px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background 4s ease;
+    height: 25px;
+    padding: 2px;
+}
+
+.copy-btn:hover{
+    background-color: red;
+}
