@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multi-Step Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+    <form class="multi-step-form">
+        <input type="radio" name="step" id="step1" checked>
+        <input type="radio" name="step" id="step2">
+        <input type="radio" name="step" id="step3">
+
+        <div class="progress-container">
+            <div class="circle">1</div>
+            <div class="circle">2</div>
+            <div class="circle">3</div>
+        </div>
+
+        <div class="form-step step-1-content">
+            <h2>Welcome</h2>
+            <p>Let's start with your account details.</p>
+            <input type="email" placeholder="Email Address">
+            <div class="button-group">
+                <label for="step2" class="btn next">Continue</label>
+            </div>
+        </div>
+
+        <div class="form-step step-2-content">
+            <h2>Personal</h2>
+            <p>Tell us a bit about yourself.</p>
+            <input type="text" placeholder="Full Name">
+            <div class="button-group">
+                <label for="step1" class="btn prev">Back</label>
+                <label for="step3" class="btn next">Next</label>
+            </div>
+        </div>
+
+        <div class="form-step step-3-content">
+            <h2>Finalize</h2>
+            <p>Almost there! Click submit to finish.</p>
+            <div class="button-group">
+                <label for="step2" class="btn prev">Back</label>
+                <button type="submit" class="btn submit">Create Account</button>
+            </div>
+        </div>
+    </form>
+</div>
+
+</body>
+</html>
