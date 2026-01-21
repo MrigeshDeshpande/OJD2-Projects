@@ -23,3 +23,48 @@ body{
     padding: 40px 20px;
 }
 
+.survey-form{
+    background: var(--bg-card);
+    padding: 35px;
+    border-radius: 20px;
+    box-shadow: 0 10px 25px;
+}
+
+header h1{
+    margin: 0;
+    font-size: 2rem;
+}
+
+header p{
+    color: var(--text-muted);
+    font-size: 0.9rem;
+    margin-top: 5px;
+}
+
+.toggle{
+    display: flex;
+    justify-content: flex-end;
+    gap: 8px;
+    margin-bottom: 20px;
+    align-items: center;
+}
+
+.switch{
+    width: 45px;
+    height: 22px;
+    background: red;
+    border-radius: 20px;
+    position: relative;
+    cursor: pointer;
+}
+
+.switch::after{
+    content: '';
+    position: absolute;
+    width: 18px;
+    height: 18px;
+    background: white;
+    border-radius: 50%;
+    top: 2px;
+    left: 2px;
+}
