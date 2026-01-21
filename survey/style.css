@@ -1,0 +1,25 @@
+:root{
+    --primary: rgb(22, 129, 250);
+    --bg-body: wheat;
+    --bg-card: white;
+    --text-main: #1f1f1f;
+    --text-muted: #6b7280;
+    --border: rgb(94, 94, 94);
+    --input-bg:white;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family:'Times New Roman', Times, serif;
+    background-color: var(--bg-body);
+    color: var(--text-main);
+    display: flex;
+    justify-content: center;
+    padding: 40px 20px;
+}
+

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <input type="checkbox" id="theme" class="control">
+    <div>
+
+        <form class="survey-form">
+            <header>
+                <div class="toggle">
+                    <span>☀️</span>
+                    <label for="theme"></label>
+                    <span>🌙</span>
+                </div>
+                <h1>Skillyards Survey Form</h1>
+                <p>Interactive Feedback Form</p>
+            </header>
+
+
+            <section class="form-group">
+                <label for="full-name">Full Name</label>
+                <input type="text" id="full-name" placeholder="John Doe">
+            </section>
+
+            <section class="form-group">
+                <label>How would you rate our speed?</label>
+                <div class="star-rating">
+                    <input type="radio" name="stars" id="s5"><label for="s5">*</label>
+                    <input type="radio" name="stars" id="s4"><label for="s4">*</label>
+                    <input type="radio" name="stars" id="s3"><label for="s3">*</label>
+                    <input type="radio" name="stars" id="s2"><label for="s2">*</label>
+                    <input type="radio" name="stars" id="s1"><label for="s1">*</label>
+                </div>
+            </section>
+
+            <section class="form-group">
+                <label for="complexity">Interface Complexity</label>
+                <input type="range" id="complexity" min="0" max="100" value="50">
+                <div class="range-levels">
+                    <span>Simple</span>
+                    <span>Advanced</span>
+                </div>
+            </section>
+            x
+            <section class="form-group">
+                <label for="launch">Launch Date</label>
+                <input type="date" id="launch">
+            </section>
+
+            <section class="form-group">
+                <label>Mockup Upload</label>
+                <label class="file-upload">
+                    <input type="file" hidden>
+                    <span>Click to upload image</span>
+                </label>
+            </section>
+
+            <button type="submit" class="btn">Send Feedback</button>
+        </form>
+    </div>
+
+</body>
+
+</html>
