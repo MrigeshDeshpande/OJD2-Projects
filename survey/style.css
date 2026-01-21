@@ -1,21 +1,31 @@
-:root{
+:root {
     --primary: rgb(22, 129, 250);
     --bg-body: wheat;
     --bg-card: white;
     --text-main: #1f1f1f;
     --text-muted: #6b7280;
     --border: rgb(94, 94, 94);
-    --input-bg:white;
+    --input-bg: white;
 }
 
-*{
+#theme:checked~.form-wrapper {
+    --bg-body: #0f172a;
+    --bg-card: #242e3c;
+    --text-main: #a9a9a9;
+    --text-muted: wheat;
+    --border: rgb(94, 94, 94);
+    --input-bg: rgb(0, 0, 0);
+    color: white;
+}
+
+* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
 
-body{
-    font-family:'Times New Roman', Times, serif;
+body {
+    font-family: 'Times New Roman', Times, serif;
     background-color: var(--bg-body);
     color: var(--text-main);
     display: flex;
@@ -23,25 +33,25 @@ body{
     padding: 40px 20px;
 }
 
-.survey-form{
+.survey-form {
     background: var(--bg-card);
     padding: 35px;
     border-radius: 20px;
     box-shadow: 0 10px 25px;
 }
 
-header h1{
+header h1 {
     margin: 0;
     font-size: 2rem;
 }
 
-header p{
+header p {
     color: var(--text-muted);
     font-size: 0.9rem;
     margin-top: 5px;
 }
 
-.toggle{
+.toggle {
     display: flex;
     justify-content: flex-end;
     gap: 8px;
@@ -49,7 +59,7 @@ header p{
     align-items: center;
 }
 
-.switch{
+.switch {
     width: 45px;
     height: 22px;
     background: red;
@@ -58,7 +68,7 @@ header p{
     cursor: pointer;
 }
 
-.switch::after{
+.switch::after {
     content: '';
     position: absolute;
     width: 18px;
@@ -67,4 +77,86 @@ header p{
     border-radius: 50%;
     top: 2px;
     left: 2px;
+}
+
+#theme:checked~.form-wrapper .switch::after {
+    left: 25px;
+}
+
+#theme:checked~.form-wrapper .switch {
+    background: var(--primary);
+}
+
+.form-group{
+    margin-bottom: 20px;
+}
+
+label{
+    display: block;
+    font-weight: 800;
+    font-size: 1.2rem;
+    margin: 8px;
+}
+
+.star-rating{
+    display: flex;
+    justify-content: center;
+    flex-direction: row-reverse;
+}
+
+.star-rating input {display: none;}
+.star-rating label{
+    color: rgb(96, 77, 77);
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.star-rating input:checked ~label,
+.star-rating label:hover,
+.star-rating:hover ~label{
+    color: rgb(255, 0, 0);
+}
+
+input[type="text"], input[type="date"], input[type="file"]{
+    width: 100%;
+    padding: 15px;
+    border: 2px solid red;
+    border-radius: 10px;
+}
+
+.file-upload{
+    border: 2px dashed var(--border);
+    padding: 20px;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 15px;
+}
+
+.file-upload:hover{
+    border-color: #0f172a;
+}
+
+.btn{
+    width: 100%;
+    background: var(--primary);
+    color: white;
+    padding: 15px;
+    border-radius: 10px;
+    font-weight: 800;
+    cursor: pointer;
+    margin-top: 10px;
+    box-shadow: 0 4px 12px rgba(100,102,240,0.4);
+}
+
+input[type="range"]{
+    width: 100%;
+}
+
+.range-levels{
+    justify-content: space-between;
+    display: flex;
+}
+
+input[type="checkbox"]{
+    display: none;
 }
