@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Order Successful</title>
+  <link rel="stylesheet" href="style.css" />
+
+  <style>
+    .success-page {
+      max-width: 900px;
+      margin: auto;
+      text-align: center;
+      padding-top: 60px;
+    }
+
+    .success-card {
+      background: var(--bg-card);
+      border-radius: var(--radius);
+      padding: 40px 24px;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+    }
+
+    .check-icon {
+      width: 90px;
+      height: 90px;
+      margin: 0 auto 18px;
+      border-radius: 50%;
+      background: #22c55e;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      font-size: 2.5rem;
+      font-weight: 900;
+    }
+
+    .success-card h1 {
+      font-size: 2rem;
+      margin-bottom: 10px;
+    }
+
+    .success-card p {
+      color: var(--text-muted);
+      font-size: 1rem;
+      line-height: 1.6;
+      margin-bottom: 22px;
+    }
+
+    .btn-row {
+      display: flex;
+      justify-content: center;
+      gap: 12px;
+      flex-wrap: wrap;
+      margin-top: 18px;
+    }
+
+    .primary-btn, .secondary-btn {
+      padding: 12px 18px;
+      border-radius: 12px;
+      font-weight: 700;
+      text-decoration: none;
+      display: inline-block;
+      transition: transform 0.2s ease;
+    }
+
+    .primary-btn {
+      background: var(--primary);
+      color: white;
+    }
+
+    .secondary-btn {
+      background: #111827;
+      color: white;
+    }
+
+    .primary-btn:hover, .secondary-btn:hover {
+      transform: scale(1.02);
+    }
+  </style>
+</head>
+<body>
+
+  <main class="success-page">
+
+    <section class="success-card">
+      <div class="check-icon">✓</div>
+
+      <h1>Order Placed Successfully!</h1>
+      <p>
+        Thank you for your purchase. Your order has been confirmed and will be delivered soon.
+        <br>
+        You will receive an update on SMS/Email.
+      </p>
+
+      <div class="btn-row">
+        <a href="index.html" class="primary-btn">Continue Shopping</a>
+        <a href="cart.html" class="secondary-btn">View Cart</a>
+      </div>
+    </section>
+
+  </main>
+
+</body>
+</html>

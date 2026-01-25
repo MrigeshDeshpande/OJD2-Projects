@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Checkout</title>
+  <link rel="stylesheet" href="style.css" />
+
+  <style>
+    .checkout-page {
+      max-width: 900px;
+      margin: auto;
+    }
+
+    .top-bar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 18px;
+    }
+
+    .top-bar h1 {
+      font-size: 1.8rem;
+    }
+
+    .back-link {
+      text-decoration: none;
+      font-weight: 600;
+      color: var(--primary);
+    }
+
+    .checkout-box {
+      background: var(--bg-card);
+      border-radius: var(--radius);
+      padding: 24px;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+    }
+
+    form {
+      display: grid;
+      gap: 14px;
+      margin-top: 14px;
+    }
+
+    .grid-2 {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 14px;
+    }
+
+    input, textarea, select {
+      width: 100%;
+      padding: 12px;
+      border-radius: 12px;
+      border: 1px solid var(--border);
+      outline: none;
+      font-size: 1rem;
+      font-family: inherit;
+    }
+
+    textarea {
+      resize: none;
+      min-height: 90px;
+    }
+
+    .pay-btn {
+      width: 100%;
+      padding: 14px;
+      border: none;
+      border-radius: 12px;
+      background: var(--primary);
+      color: white;
+      font-weight: 700;
+      cursor: pointer;
+      transition: transform 0.2s ease;
+    }
+
+    .pay-btn:hover {
+      transform: scale(1.02);
+    }
+
+    .order-summary {
+      margin-top: 18px;
+      border-top: 1px solid var(--border);
+      padding-top: 18px;
+      display: flex;
+      justify-content: space-between;
+      font-weight: 800;
+      font-size: 1.1rem;
+    }
+
+    @media (max-width: 700px) {
+      .grid-2 {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <main class="checkout-page">
+
+    <div class="top-bar">
+      <h1>Checkout</h1>
+      <a class="back-link" href="cart2.html">← Back to cart</a>
+    </div>
+
+    <section class="checkout-box">
+      <p style="color: var(--text-muted);">
+        Enter your delivery details below.
+      </p>
+
+      <form action="success.html">
+        <div class="grid-2">
+          <input type="text" placeholder="Full Name" required>
+          <input type="tel" placeholder="Phone Number" required>
+        </div>
+
+        <div class="grid-2">
+          <input type="text" placeholder="City" required>
+          <input type="text" placeholder="Pincode" required>
+        </div>
+
+        <textarea placeholder="Full Address" required></textarea>
+
+        <select required>
+          <option value="">Select Payment Method</option>
+          <option>Cash on Delivery</option>
+          <option>UPI</option>
+          <option>Debit Card</option>
+          <option>Credit Card</option>
+        </select>
+
+        <div class="order-summary">
+          <span>Total</span>
+          <span>₹2,999</span>
+        </div>
+
+        <button class="pay-btn" type="submit">
+          Place Order
+        </button>
+      </form>
+    </section>
+
+  </main>
+
+</body>
+</html>
