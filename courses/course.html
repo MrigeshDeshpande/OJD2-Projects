@@ -46,7 +46,17 @@
     console.log("Search:", window.location.search);
 
     const params = new URLSearchParams(window.location.search);
-    console.log(params,"abc")
+    console.log(params,"abc");
+    const course = params.get("course");
+    console.log(course);
+
+    const data = courses[course];
+    console.log(data)
+
+    document.getElementById("title").innerText = data.title
+    document.getElementById("desc").innerText = data.desc
+    document.getElementById("duration").innerText = data.duration
+    document.getElementById("price").innerText = data.price
 
 
 
