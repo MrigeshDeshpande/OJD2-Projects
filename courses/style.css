@@ -1,0 +1,91 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color: whitesmoke;
+    height: 100vh;
+}
+nav {
+    width: 100%;
+    background-color: rgb(90, 168, 179);
+    padding: 12px;
+}
+.ank {
+    color: white;
+    font-size: 18px;
+}
+a {
+    font-size: 18px;
+    font-weight: bold;
+    margin-left: 20px;
+}
+.courses {
+    display: grid;
+     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+     gap: 35px;
+}
+.card {
+    height: 150px;
+    width: 300px;
+    background-color: powderblue;
+    align-content: center;
+    text-align: center;
+    font-size: 18px;
+    border-radius: 10px;
+    box-shadow: 3px 2px 10px rgb(96, 167, 177);
+    transition: 1.5s;
+    margin-top: 20px;
+}
+.card:hover {
+    transform: translateY(-8px);
+}
+.container {
+    margin-top: 20px;
+    margin-left: 100px;
+    padding-left: 45px;
+    padding-right: 100px;
+}
+h3 {
+    margin-bottom: 20px;
+}
+p {
+    margin-bottom: 20px;
+    color: grey;
+}
+.btn {
+    width: 70px;
+    background-color: rgb(117, 117, 158);
+    padding: 6px;
+    border-radius: 8px;
+    color: white;
+    text-decoration: none;
+    font-size: 17px;
+    box-shadow: 3px 2px 10px rgb(141, 141, 158);
+    transition: all 1s ease;
+    cursor: pointer;
+    margin-right: 25px;
+}
+.btn:hover {
+    background: rgb(22, 160, 22);
+}
+.container2 {
+    height: 200px;
+    background-color: powderblue;
+    width: 350px;
+    text-align: center;
+    margin-top: 100px;
+    margin-left: 500px;
+    border-radius: 10px;
+    box-shadow: 3px 2px 10px rgb(96, 167, 177);
+    transition: all 2s;
+}
+.container2:hover {
+    transform: translateY(-8px);
+}
+.p1 {
+    color: black;
+}
+
+
