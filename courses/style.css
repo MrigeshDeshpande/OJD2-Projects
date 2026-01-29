@@ -1,0 +1,98 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+     background-color: whitesmoke;
+      align-items: center;
+     min-height: 100vh;
+}
+nav{
+    background-color: rgb(153, 153, 234);
+    padding:15px;
+}
+a{
+    color: black;
+    transition: all 0.1s;
+    cursor: pointer;
+}
+a:hover{
+    color: white;
+}
+.container{
+    margin-top: 70px;
+    margin-left: 120px;
+    padding-left: 45px;
+    padding-right: 60px;
+} 
+.container2{
+     margin-top: 70px;
+    margin-left: 500px;
+    background:  rgb(212, 212, 255);
+    width: 400px;
+    height: 200px;
+    text-align: center;
+    border-radius: 15px;
+    box-shadow: 2px 2px 10px rgb(105, 105, 229);
+}
+head{
+    margin-bottom: 10px;
+}
+h1{
+    margin-bottom: 20px;
+}
+.courses{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(300px, 1fr));
+    justify-content: space-between;
+}
+.card{
+    background-color: rgb(212, 212, 255);
+    width: 290px;
+    height: 130px;
+    border-radius: 10px;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+    margin-top: 10px;
+    /* display: inline-block; */
+    /* margin-left: 20px; */
+    transition: all 0.1s;
+    box-shadow: 2px 2px 10px rgb(153, 153, 234);
+    border-color: rgb(105, 105, 229);
+} 
+.card:hover{
+    transform: translateY(-3px);
+}
+h3{
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+p{
+    margin-bottom: 15px;
+    color: grey;
+    font-size: 14px;
+    font-style: italic;
+}
+.dur{
+    color: black;
+   font-style: normal;
+   
+}
+.btn{
+    background-color:rgb(234, 247, 247);
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+    padding: 8px;
+    border-radius: 10px;
+    text-decoration: none;
+}
+.btn:hover{
+    color: grey;
+}
+
+
+
+
+
