@@ -1,0 +1,64 @@
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    background-color:ghostwhite;
+}
+
+nav{
+    background: rgba(199, 224, 222, 0.916);
+    padding: 10px;
+    margin: 0%;
+    width: 100vw;
+    position: absolute;
+    top: 0%;
+    left: 0%;
+}
+ 
+.courses{
+      margin-top: 30px;
+    display:flex;
+    gap: 30px;
+    
+    
+}
+
+.card{
+      background-color: white;
+      width: 250px;
+      padding: 20px;
+      border-radius: 20px;
+      box-shadow: 1px 1px 5px;
+
+}
+.btn{
+   
+    background-color: blue;
+    padding: 5px;
+    border-radius: 5px;
+    
+}
+
+.hero{
+  width: 62vw;
+  margin: 30px 22%;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+h1{
+    margin-top: 100px;
+}
+
+.container-{
+    margin-left: 25%;
+    box-shadow: 2px 2px 5px;
+    padding: 0 0 20px 20px;
+    border-radius: 20px;
+    width: 400px;
+}
