@@ -20,6 +20,7 @@ a {
     font-size: 18px;
     font-weight: bold;
     margin-left: 20px;
+    text-decoration: none;
 }
 .courses {
     display: grid;
@@ -52,6 +53,7 @@ h3 {
 }
 p {
     margin-bottom: 20px;
+    margin-top: 10px;
     color: grey;
 }
 .btn {

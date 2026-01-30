@@ -1,0 +1,50 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color: #101829;
+    color: white;
+    height: 100vh;
+    align-content: center;
+}
+.content {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+.card {
+    height: 200px;
+    width: 260px;
+    background-color: rgb(19,18,18);
+    text-align: center;
+    align-content: center;
+    border-radius: 10px;
+    padding: 10px;
+    border: 1px solid rgb(97, 92, 92);
+    font-family: sans-serif;
+    cursor: pointer;
+}
+.pera {
+    color: rgb(185, 177, 177);
+    margin-top: 10px;
+}
+.up {
+    margin-top: 10px;
+}
+h1 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+.main-pera {
+    text-align: center;
+    margin-bottom: 40px;
+     color: rgb(214, 206, 206);
+     font-size: 15px;
+     word-spacing: 2px;
+     font-size: 17px;
+}
+.img {
+    height: 50px;
+}
