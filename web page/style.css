@@ -1,0 +1,177 @@
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: rgba(0, 0, 0, 0.815);
+font-family: sans-serif;
+
+}
+.small{
+    color: white;
+    background-color: rgb(37, 36, 36);
+  padding: 15px 50px 18px 18px;
+  border-radius: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.142);
+  height: 108px;
+    width: 220px;
+}
+.cap{
+    width: 53vw;
+}
+.card{
+    display: flex;
+    justify-content: space-between;
+}
+.pic{
+      color: white;
+    background-color: rgb(37, 36, 36);
+  padding: 15px 50px 18px 18px;
+  border-radius: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.142);
+  width: 35vw;
+  height: 450px;
+  position: relative;
+  margin-top: 7px;
+}
+
+img{
+    height: 270px;
+    width: 250px;
+}
+.tap{
+    display: flex;
+    align-items: center;
+}
+.colour{
+margin-left: 3px;   
+ color: purple;
+ line-height: 40px;
+}
+.tap2{
+    display: flex;
+    justify-content: space-between;
+    width: 250px;
+    font-size: 12px;
+}
+.text2 p{
+        background-color: rgba(240, 248, 255, 0.059);
+padding: 0px 5px;
+    padding: 4px 5px;
+
+border-radius: 10px;
+}
+.photo-content{
+    display: flex;
+    margin: 6px;
+}
+.textmonals{ 
+  width: 220px;
+margin: 6px;
+  height: 550px;
+position: relative;
+     color: white;
+    background-color: rgb(37, 36, 36);
+  padding: 15px 10px 18px 18px;
+  border-radius: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.142);
+  line-height: 20px;
+}
+.possition{
+  width: 220px;
+  margin: 6px;
+  position: relative;
+  color: white;
+  background-color: rgb(37, 36, 36);
+  padding: 15px 10px 18px 18px;
+  border-radius: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.142);
+  line-height: 20px;
+  height: 180px;
+}
+.possition p{
+    color: purple;
+    line-height: 30px;
+}
+
+
+.possition2{
+   width: 220px;
+   margin: 6px;
+   position: relative;
+     color: white;
+    background-color: rgb(37, 36, 36);
+  padding: 15px 10px 18px 18px;
+  border-radius: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.142);
+  line-height: 20px;
+  height: 180px;
+}
+
+.possition2 h5{
+    background-color: white;
+    color: black;
+    height: 20px;
+    width: 100px;
+    text-align: center;
+    border-radius: 5px;
+    margin-top: 8px;
+}
+button{
+    margin-top: 10px;
+    color: white;
+    background-color: rgb(245, 130, 245);
+    border: none;
+    padding: 10px 60px;
+    border-radius:15px ;
+}
+.textmonals h4{
+    font-size: 15px;
+    line-height: 40px;
+}
+
+.textmonals p{
+    color: purple;
+}
+.textmonals h3{
+    height: 60px;
+    font-size: 13px;
+    margin: 10px 0px;
+    padding: 10px;
+    border-radius: 15px;
+            background-color: rgba(240, 248, 255, 0.099);
+
+}
+.textmonals li{
+    margin-left:30px ;
+    line-height: 25px;
+}
+
+.Clients{
+          color: white;
+    background-color: rgb(37, 36, 36);
+  padding: 15px 50px 90px 18px;
+  border-radius: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.142);
+  width: 35vw;
+  position: absolute;
+  left: 0px;
+line-height: 25px;
+  top: 460px;
+}
+.Clients p{
+    color: purple;
+          line-height: 35px;
+
+}
+
+.top{
+    width: 80vw;
+    margin: 20px 15%;
+}
+
+ 
+
+    
