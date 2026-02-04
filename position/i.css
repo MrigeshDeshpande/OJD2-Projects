@@ -1,0 +1,52 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: whitesmoke;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.container{
+    display: flex;
+    gap: 15px;
+    width: 80%;
+    /* position: relative; */
+}
+
+.box{
+    flex: 1;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+    border-radius: 10px;
+}
+
+.box1{
+    background-color: red;
+}
+
+.box2{
+    background-color: green;
+    position: relative;
+    top: -25px;
+    left: 100px;
+}
+
+.box3{
+    background-color: aqua;
+    top: 100px;
+    position: absolute;
+    /* top: 30px;
+    right: 0; */
+    /* width: 150px; */
+}
