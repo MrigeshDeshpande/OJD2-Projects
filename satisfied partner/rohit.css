@@ -1,0 +1,152 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: rgba(92, 91, 91, 0.815);
+font-family: sans-serif;
+
+}
+.boxes{
+    color: white;
+    background-color: rgb(37, 36, 36);
+  padding: 15px 50px 18px 18px;
+  border-radius: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.142);
+  height: 108px;
+  width: 180px;
+}
+.container{
+    width: 44vw;
+    color: rgb(181, 184, 186);
+    
+}
+.content{
+    display: flex;
+    justify-content: space-between;
+}
+.pic{
+      color: white;
+    background-color: rgb(37, 36, 36);
+  padding: 15px 50px 18px 18px;
+  border-radius: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.142);
+  width: 370px;
+}
+
+img{
+    height: 270px;
+    width: 250px;
+}
+.text{
+    display: flex;
+    align-items: center;
+}
+.T{
+margin-left: 3px;   
+ color: purple;
+ line-height: 40px;
+}
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: rgba(0, 0, 0, 0.815);
+font-family: sans-serif;
+
+}
+.primary-boxes{
+    color: white;
+    background-color: rgb(37, 36, 36);
+  padding: 15px 50px 18px 18px;
+  border-radius: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.142);
+  height: 108px;
+  width: 180px;
+}
+.container{
+    width: 44vw;
+}
+.content{
+    display: flex;
+    justify-content: space-between;
+}
+.second{
+    display: flex;
+    gap: 10px; 
+    margin-top: 5px;
+}
+.pic{
+      color: white;
+    background-color: rgb(37, 36, 36);
+  padding: 15px 50px 18px 18px;
+  border-radius: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.142);
+  width: 370px;
+}
+
+img{
+    height: 270px;
+    width: 250px;
+}
+.text{
+    display: flex;
+    align-items: center;
+}
+.p{
+margin-left: 3px;   
+ color: purple;
+ line-height: 40px;
+}
+
+.pp{
+        background-color: rgba(240, 248, 255, 0.059);
+padding: 0px 5px;
+    padding: 4px 5px;
+width: 190px;
+border-radius: 10px;
+}
+.Rave{
+     background-color: rgb(37, 36, 36);
+  padding: 15px 50px 18px 18px;
+  border-radius: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.142);
+  height: 400px;
+  width: 400px;
+   display: grid;
+
+           gap:16px
+}
+.My{
+    
+     background-color: rgb(37, 36, 36);
+  padding: 15px 50px 18px 18px;
+  border-radius: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.142);
+  width: 370px;
+   display: grid;
+
+           gap:16px
+    
+}
+.second2{
+    display: flex;
+  margin-top: 5px;
+  gap: 5px;
+}
+.tt{
+    width: 200px;
+}
+.btn{
+    background-color: rgb(90, 90, 216);
+    width: 200px;
+    border-radius: 5px;
+}
+.btn2{
+    background-color: whitesmoke;
+     width: 100px;
+    border-radius: 5px;
+}
