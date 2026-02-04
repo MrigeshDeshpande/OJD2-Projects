@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>leadflow UI</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="auth">
+       <section class="auth-left">
+        <h1>Lead-flow</h1>
+        <p>Learning &middot; Evolving  &middot; Rising</p>
+       </section>
+
+       <section class="auth-right">
+        <input type="checkbox" id="auth-toggle" hidden>
+
+        <div class="toggle">
+            <label for="auth-toggle">Sign in</label>
+            <label id="signup" for="auth-toggle">Sign up</label>
+        </div>
+        <form class="auth-form login">
+            <div class="field mail">
+                <input type="email" required >
+                <label class="label" id="email" >Email</label>
+            </div>
+            <div class="field">
+                <input type="password" required >
+                <label class="label" >Password</label>
+
+            </div>
+            <button class="btn">Continue</button>
+        </form>
+
+        <form class="auth-form signup">
+            <div class="field">
+                <input type="text" required placeholder="Full Name">
+            </div>
+            <div class="field">
+                <input type="email" required placeholder="Email"/>
+            </div>
+            <div class="field">
+                <input type="password" required placeholder="Password"/>
+            </div>
+            <button class="btn">Create Account</button>
+        </form>
+       </section>
+    </div>
+</body>
+</html>

@@ -1,0 +1,165 @@
+:root {
+    --bg : rgb(8, 12, 70);
+    --card:#ffffff;
+    --primary:#667eea;
+
+    --text-main:reb(53,51 ,51);
+    --text-muted:#777;
+
+    --space-sm: 12px;
+    --space-md: 20px;
+    --space-lg: 32px;
+    --space-xl: 48px;
+    --radius-md:10px;
+    --font-lg:34px
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
+}
+body {
+    height: 100vh;
+    display: grid;
+    place-items: center;
+    background: var(--bg);
+}
+.auth {
+    width: min(900px, 93%);
+    height: 500px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background: var(--card);
+    border-radius: var(--radius-md);
+    overflow: hidden;
+    box-shadow: 0 2px 50px rgba(194, 181, 181, 0.9);
+}
+.auth-left {
+    padding: var(--space-xl);
+    color: white;
+    background: linear-gradient(120deg,#667eea,#764ba6);
+}
+.auth-left h1 {
+    font-size: var(--font-lg);
+    line-height: 1.3;
+}
+.auth-left p {
+    margin-top: var(--space-sm);
+}
+.auth-right {
+    padding: var(--space-xl);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.toggle{
+    background: rgba(128, 128, 128, 0.527);
+    padding: 10px 15px;
+width: fit-content;
+display: inline-flex;
+border-radius: 20px;
+margin-bottom: 30px;
+}
+
+
+.toggle label{
+    padding: 8px 16px;
+    font-size: 18px;
+    color: rgb(61, 58, 58);
+    cursor: pointer;
+    border-radius: 50%;
+}
+
+.toggle label:first-child{
+background-color: #667eea;
+color: white;
+border-radius: 20px;
+}
+.auth-form{
+     background-color: #7777773d;
+     padding: var(--space-lg);
+     border-radius: var(--radius-md);
+     display: flex;
+     flex-direction: column;
+     gap: var(--space-md);
+}
+
+.signup{
+    display: none;
+}
+
+.field input{
+    width: 100%;
+    padding: 16px 14px;
+    border-radius:var(--radius-md) ;
+    border:1px solid rgb(41, 39, 39) ;
+    font-size:12px ;
+
+}
+.btn{
+    background-color: blue;
+    border: none;
+    padding: 10px 0;
+    color: white;
+    border-radius: 999px;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+#auth-toggle:checked ~ .toggle #signup{
+background-color: #667eea;
+color: white;
+border-radius: 20px;
+}
+#signup{
+color: gray;
+border-radius: 20px;
+}
+#auth-toggle:checked ~ .toggle label:first-child{
+    background-color: gray;
+color: rgb(24, 23, 23);
+border-radius: 20px;
+}
+
+
+#auth-toggle:checked ~ .toggle .signup{
+    display: flex;
+}
+
+.field input:focus + label,
+.field input:valid + label{
+    font-size: 15px;
+    top: -18px;
+    
+}
+
+.field{
+    position: relative;
+
+}
+.field label{
+    position: absolute;
+    left: 5px;
+    top: 15px;
+}
+#auth-toggle:checked ~ .toggle label:first-child {
+    background: transparent;
+    color: var(--text-muted);
+}
+#auth-toggle:checked ~ .toggle label:last-child {
+    background: var(--primary);
+    color: wheat;
+}
+
+#auth-toggle:checked ~ .login{
+    display: none;
+}
+#auth-toggle:checked ~ .toggle label:last-child {
+    background: var(--primary);
+    color: wheat;
+}
+
+#auth-toggle:checked ~ .signup{
+    display: flex;
+}
