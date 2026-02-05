@@ -58,3 +58,27 @@ body{
 .menu-btn close{
     transform:  rotate(90deg);
 }
+
+.menu{
+    top: 0;
+    left: 0;
+    width: 300px;
+    height: 100%;
+    background-color: black;
+    padding: 30px 30px;
+    transform: translateX(-100%);
+    transition: 4s cubic-bezier(0.075, 0.82, 0.165, 1);
+    position: fixed;
+}
+
+.menu a{
+    display: block;
+    color: white;
+    font-size: 18px;
+    margin-bottom: 30px;
+    font-weight: 400;
+}
+
+#menu-toggle:checked ~ .menu{
+    transform: translateX(0);
+}
