@@ -179,3 +179,14 @@ ul{
   width: 250px;
   border-radius: 3px;
 }
+
+@media (max-width: 768px) {
+  .main-layout {
+    flex-direction: column;
+  }
+
+  .grid,
+  .grid2 {
+    width: 100%;
+  }
+}

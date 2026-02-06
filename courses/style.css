@@ -4,7 +4,9 @@
 }
 
 body{
-     background-color: whitesmoke;
+     /* background-color: whitesmoke; */
+     /* background: #f9fafc; */
+     background: linear-gradient(180deg, #ffffff,#b0a7f3);
       align-items: center;
      min-height: 100vh;
 }
@@ -20,7 +22,8 @@ a{
     font-weight: 800;
 }
 a:hover{
-    color: white;
+    /* color: white; */
+    color: #374151;
 }
 .container{
     margin-top: 70px;
@@ -74,7 +77,8 @@ h3{
 }
 p{
     margin-bottom: 15px;
-    color: grey;
+    /* color: grey; */
+    color: #6b7280;
     font-size: 14px;
     font-style: italic;
 }
@@ -100,7 +104,7 @@ p{
       background-color: rgb(212, 212, 255);
         width: 310px;
         height: 210px;
-        margin-left: 20%;
+        margin-left: 30%;
         border-radius: 10px;
         text-align: center;
         padding: 25px;
@@ -129,6 +133,7 @@ select{
      cursor: pointer;
      transition: 0.2s;
      font-size: 15px;
+     border: 1px solid rgb(105, 105, 229);
 
 }
 .bt:hover{
@@ -137,7 +142,7 @@ select{
 }
 .en{
     margin-top: 5%;
-    margin-left: 20%;
+    margin-left: 30%;
 }
 .card-success{
     width: 320px;
@@ -166,7 +171,15 @@ select{
     font-size: 17px;
 }
 
+@media(max-width: 480px){
+ .heading{
+    font-size: 1.6rem;
+ }
 
+ .card{
+    padding: 20px;
+ }
+}
 
 
 

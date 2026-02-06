@@ -103,12 +103,12 @@ body {
     width: 100%;
     padding: 16px 14px;
     border-radius: var(--radius-md);
-    border: 1px solid red;
+    border: 1px solid grey;
     font-size: 14px;
 }
 .field{
     position: relative;
-    color: rgb(255, 0, 0);
+    color: gray(255, 0, 0);
 }
 .field label{
     position: absolute;
