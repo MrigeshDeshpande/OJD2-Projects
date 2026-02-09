@@ -117,10 +117,11 @@ span{
 }
 
 .content h1{
+    margin-top:60px;
     margin-bottom: 20px;
     color: #ffffff;
-    margin-left: 150px;
-    width: 280px;
+    margin-left: 110px;
+    width: 350px;
     font-size: 40px;
 }
 
@@ -128,6 +129,7 @@ span{
     line-height: 1.9;
     color: #ffffff;
     width: 550px;
+    font-size: 15px;
 }
 .btn{
     display: flex;
@@ -165,6 +167,7 @@ span{
 .btn2:hover {
     background-color: white;
     transform: translateY(-3px);
+    color: black;
 }
 
 ::selection{
@@ -187,7 +190,7 @@ h1::first-letter{
   background:rgba(0,0,0,.5);
   opacity:0;
   transition:.4s;
-  z-index: 999;
+  z-index: -1;
 }
 
 #menu-toggle:checked ~ .overlay {
@@ -195,7 +198,7 @@ h1::first-letter{
 }
 .rating{
     background-color: black;
-   height: 180px;
+   height: 130px;
    color: white;
    display: flex;
    justify-content: center;
@@ -204,13 +207,130 @@ h1::first-letter{
    text-align: center;
    /* border: 1px solid white; */
 }
-/* .item-card{
-   margin-left: 50px;
-} */
+.projects, h1{
+    text-align: center;
+   padding: 20px;
+}
+.course-track{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    gap: 40px;
+    /* position: relative; */
+    /* margin-top: 40px; */
+}
+.course{
+    background-color: #ffffff;
+    width: 300px;
+    height: 290px;
+    padding: 30px;
+    border-radius: 20px;
+}
+.list, a{
+    display: grid;
+    padding: 6px;
+   color: rgb(83, 82, 82);
+    font-size: 12px;
+    font-weight: normal;
+}
+ .btn22{
+     margin-left: 15px;
+     padding: 6px;
+     border-radius: 20px;
+     margin-bottom: 25px;
+     background-color: white;
+     color: black;
+     border: 2px solid black;
+}
+ .course, label{
+    color: rgb(0, 0, 0);
+    margin-bottom:20px ;
+    font-size: 23px;
+    font-weight: 800;
+} 
+.cp{
+    color: rgb(0, 0, 0);
+    font-weight: 540;
+    font-size: 15px;
+}
+.course, .slesh{
+    color: grey;
+    font-size: 12px;
+}
+.course-s{
+    background-color: black;
+    color: white;
+    width:300px;
+    padding-top: 40px;
+    height:290px;
+    position: relative;
+    border-radius: 20px;
+}
+.divider3{
+    height: 3px;
+    width: 50px;
+    background-color: aqua;
+    margin: 20px auto;
+    margin-bottom: 90px;
+    /* position: absolute; */
+}
+.course-s, p{
+    font-size: 12px;
+   margin-bottom: 15px;
+    font-weight: normal;
+}
+.course-s, .a{
+    color: white;
+    font-size: 16px;
+}
+.course, a{
+    display: grid;
+    color: rgb(0, 0, 0);
+    font-size: 12px;
+    font-weight: normal;
+    margin-bottom: 5px;
+}
+.price{
+    color: rgb(255, 255, 255);
+    font-size: 23px;
+    font-weight: 800;
+}
+.course-s, p{
+    /* margin-top: 20px; */
+    color: rgb(255, 255, 255);
+}
+.course-s, .slesh{
+    color: rgb(124, 124, 124);
+    font-size: 12px;
+}
+.pop{
+  position: absolute;
+  top: 0;
+  left: 50%;
+  border: none;
+  transform: translate(-50%, -50%);
+  background: #00ffff;
+  color: black;
+  padding: 6px 14px;
+  border-radius: 999px;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.pro{
+    width: 90px;
+    background-color: aqua;
+    border: none;
+    border-radius: 20px;
+    font-size: 12px;
+    padding: 6px;
+}
 .item-card h3{
     color: rgb(0, 183, 255);
     margin-bottom: 15px;
     font-size: 30px;
+    margin-left: 55px;
 } 
 .item-card p{
     color: rgb(181, 181, 181);
@@ -218,7 +338,7 @@ h1::first-letter{
 
 section{
     background-color: whitesmoke;
-    height: 450px;
+    height: 560px;
 }
  h2{
     font-size: 35px;
@@ -238,14 +358,10 @@ section{
     /* width: 280px;
     height: 280px; */
     display: flex;
-    margin-top: 30px;
+    margin-top: 90px;
     justify-content: center;
     text-align: center;
-    transition: 0.3s;
     cursor: pointer;
-}
-.container:hover{
-       transform: translateY(-8px);
 }
 .card{
     /* display: grid; */
@@ -258,20 +374,71 @@ section{
     text-align: start;
     border-radius: 16px;
     padding: 35px;
+    transition: 0.3s;
     box-shadow: 2px 2px 15px ;
 }
-
+.card:hover{
+    transform:translateY(-8px) ;
+}
+.one{
+    width: 250px;
+}
+.one p {
+   margin-top: 15px;
+    font-size: 19px;
+    color: rgb(211, 211, 211);
+}
+.one a{
+    display: flex;
+    margin-bottom: 9px;
+     color: rgb(105, 104, 104);
+}
+.one h5{
+    font-size: 15px;
+    margin-bottom: 10px;
+    color: white;
+}
 .card p{
     margin-top: 19px;
-    color: grey;
+     color: grey;
+     font-size: 16px;
 }
-footer{
+.divider2{
+    height: 1px;
+    width: 90%;
+    background-color: rgb(75, 75, 75);
+    margin: 20px auto;
+}
+input{
+    margin-top: 10px;
+    background-color: rgb(54, 53, 53);
+    padding: 10px;
+   color: white;
+   border: none;
+    border-radius: 6px;
+}
+ .foot{
+    display: flex;
+    justify-content: center;
+    gap: 70px;
+    padding: 40px;
+    z-index: 1;
+ }
+ footer p{
+    display: grid;
+    justify-content: center;
+    margin-bottom: 30px;
+    color: rgb(211, 211, 211);
+ }
+/* footer{
     display: flex;
     color: rgb(212, 209, 209);
     justify-content: center;
+    justify-content: space-around;
     align-items: center;
-    height: 90px;
-}
+    height: 250px;
+} */
+
 
 @media (max-width: 850px)
 {

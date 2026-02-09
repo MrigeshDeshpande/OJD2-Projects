@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Website-1</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style2.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/brands.min.css">
 </head>
 
@@ -23,9 +24,9 @@
     </div>
 
     <nav class="menu">
-        <a>Home</a>
-        <a>Projects</a>
-        <a>Services</a> 
+        <a href="#home">Home</a>
+        <a href="#projects">Course</a>
+        <a href="#featured-projects">Project</a> 
         <a>Blog</a>
         <a>Settings</a>
         <a>Contact</a>
@@ -33,7 +34,7 @@
 
     <div class="overlay"></div>
 
-    <main class="content">
+    <main class="content" id="home">
         <h1>Elevate Your Digital Craft.</h1>
         <p>Expert-led training and premium development services designed to launch your career into the future.</p>
         <div class="btn">
@@ -42,7 +43,7 @@
     </div>
     </main>
 
-    <section class="rating">
+    <section class="rating" id="ratings">
         <div class="item-card">
        <h3>500+</h2>
        <p>STUDENTS TRAINED</p>
@@ -63,7 +64,73 @@
        <p>SUCCESS RATE</p>
        </div>
     </section>
+
+    <section id="featured-projects">
+        <h1>Feature Projects</h1>
+        <div class="divider"></div>
+          <div class="container">
+            <div class="feature">
+                <img src="https://i.pinimg.com/1200x/70/48/b3/7048b30c361e2f0418300d69d6faaca3.jpg" alt="photo" class="img">
+                <button class="but">WEB APP</button>
+                <h3>E-com Dashboard</h3>
+                <p>A Full-stack React application with real-time analytics.</p>
+                <a class="viewlink">View Case Study &#8608</a>
+            </div>
+            <div class="feature">
+                <img src="https://i.pinimg.com/736x/9a/ff/c0/9affc067ac0e8ad29c01787a65e05fce.jpg" alt="photo" class="img">
+                <button class="but">SAAS</button>
+                <h3>DevFlow CRM WPS</h3>
+                <p>Custom CRM built for high-performance development teams. </p>
+                <a class="viewlink">View Case Study &#8608</a>
+            </div>
+            <div class="feature">
+                <img src="https://i.pinimg.com/736x/61/51/38/6151382fe9f624c98db4919ea1fb99ba.jpg" alt="photo" class="img">
+                <button class="but">UI/UX</button>
+                <h3>FinTech Mobile App</h3>
+                <p>User-centric design focused on secure degital payments.</p>
+                <a class="viewlink">View Case Study &#8608</a> 
+            </div>
+          </div>
+    </section>
    
+    <section id="projects">
+        <h1>Course Track</h1>
+        <div class="divider3"></div>
+    <div class="course-track">
+        <div class="course">
+           <p class="cp">starter</p>
+           <label>₹0<span class="slesh">/mo</span></label>
+           <ul class="list">
+            <a>HTML/CSS Basics</a>
+            <a>Community Support</a>
+            <a>Weekly Projects</a>
+            </ul>
+            <button class="btn22">Join Free</button>
+        </div>
+        <div class="course-s">
+            <button class="pop">Most Popular</button>
+           <p class="a">Pro Dev</p>
+           <label class="price">₹4,999<span class="slesh">/mo</span></label>
+            <p>React & Node.js</p>
+            <p>1-on-1 Mentorship</p>
+            <p>Placement Support</p>
+            <p>portfolio Review</p>
+            <button class="pro">Get Pro</button>
+        </div>
+        <div class="course">
+           <p class="cp">Mastery</p>
+           <label>₹9,999<span class="slesh">/mo</span></label>
+           <ul class="list">
+            <a>System Design</a>
+            <a>Advanced DevOps</a>
+            <a>Freelancing Blueprint</a>
+            </ul>
+            <button class="btn22">Go Master</button>
+        </div>
+        </div>
+    </section>
+     
+
     <section>
         <h2>Our Specialization</h2>
            <div class="divider"></div>
@@ -83,12 +150,66 @@
             </div>
         </div>
     </section>
+
+    <section id ="FAQ">
+            <h1>Common Questions</h1>
+            <div class="divider"></div>
+        <div class="containerr">
+            <div class="faq-item">
+            <input type="checkbox" id="faq4">
+            <label for="faq4" class="faq-question">How long are the courses?</label>
+            <div class="faq-answers">
+                <div class="faq-answer-content">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati quo, quisquam dolore vero odio ducimus dolor reprehenderit aperiam error.
+                </div>
+            </div>
+
+            <div class="faq-item">
+            <input type="checkbox" id="faq4">
+            <label for="faq4" class="faq-question">Do I get a certificate?</label>
+            <div class="faq-answers">
+                <div class="faq-answer-content">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati quo, quisquam dolore vero odio ducimus dolor reprehenderit aperiam error.
+                </div>
+            </div>
+        </div>
+    </section>
+
     
     <footer>
-        &copy;
-        <p>2026 Skillyards Versatility Pvt Ltd.Built for Excellence.</p>
+        <div class="foot">
+        <div class="one">
+        <div class="logo">Skill<span>yards</span></div>
+        <p>Pushing the boundaries of digital craftmanship since 2020</p>
+        </div>
+
+        <div class="one"> 
+            <h5>Quick Links</h5>
+            <nav>
+                <a>About Us</a>
+                <a>Our Services</a>
+                <a>Case Studies</a>
+                <a>Careers</a>
+            </nav>
+        </div>
+        <div class="one">
+            <h5>Support</h5>
+            <nav>
+                <a>contact</a>
+                <a>Privacy Policy</a>
+                <a>Terms of Service</a>
+            </nav>
+        </div>
+
+        <div class="one">
+            <h5>Newsletter</h5>
+            <p>Get the latest tech insights</p>
+            <input type="email" placeholder="enter email">
+       </div>
+        </div>
+         <div class="divider2"></div>
+        <p> &copy;2026 Skillyards Versatility Pvt Ltd.Built for Excellence.</p>
     </footer>
 
 </body>
-
 </html>
