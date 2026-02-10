@@ -20,7 +20,18 @@ font-family: sans-serif;
 .text{
     margin: 20px 0 0 30px;
     width: 550px;
+
+    transition: 2s ease;
+
 }
+
+
+.text:hover{
+    
+opacity: 0;
+}
+
+
 .text h2{
     line-height: 80px;
 }
@@ -31,17 +42,33 @@ font-family: sans-serif;
 
 
 #toggle:checked ~ .container .menu{
-    display: flex;
+    opacity: 1;
+}
 
+
+#toggle:checked ~ .container .text{
+    transition: 3s ease-out;
+    margin-left: 210px;
+    position: absolute;
+    top: 30px;
+}
+
+#toggle:checked ~ .container #menu-bar{
+    width: 100vw;
+    font-size: 100px;
+    padding: 100vw;
+    opacity: 0;
+    height: 100vh;
+    cursor:auto;
 }
 
 .menu{
-    background-color: black;
+    background-color: rgba(0, 0, 0, 1);
     position: absolute;
     height: 100vh;
     width: 200px;
  top: 0;
-    display: none;
+opacity: 0;
 }
 
 
@@ -66,8 +93,11 @@ font-family: sans-serif;
 }
 
 .scale:hover{
+    transition: 1.5s ease;
     color: aqua;
     margin-left: 20px;
+        cursor: pointer;
+
 }
 .top{
     margin: 70px 0 0 30px;
@@ -89,5 +119,20 @@ font-family: sans-serif;
    border-radius: 5px;
 position: relative;
 top: 20px;
+cursor: pointer;
 left: 25px;
 }
+
+
+h4{
+display: inline-block;
+    cursor: pointer;
+    transition: transform 1s ease;
+}
+
+#toggle:checked  ~ .container h4
+{
+    transform: rotate(45deg);
+}
+
+

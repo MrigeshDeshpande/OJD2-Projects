@@ -1,0 +1,72 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.container{
+    height: 100vh;
+    background-color: #050505;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.content{
+    position: relative;
+}
+.card{
+    background-color: rgb(69, 66, 66);
+    padding: 15vh 8vh;
+    border: 2px solid gray;
+    width: fit-content;
+    height: fit-content;
+    border-radius: 15px;
+    width: 60px;
+    height: 70px;
+    transition: .5s ease;
+    rotate: 360deg;
+    position: absolute;
+}
+.card h4{
+    color: white;
+    font-size: 25px;
+}
+
+.one{
+    position: absolute;
+        background-color: rgb(148, 141, 141);
+
+    }
+    .two{
+        position: absolute;
+    }
+    
+    .content:hover .two{
+        transition: .5s ease;
+        rotate: 350deg;
+    top: -20px;
+    margin-left: -40px;
+    position: absolute;
+}
+
+.first{
+    color: rgb(75, 72, 72);
+}
+
+
+
+.content:hover .first{
+    transition: .5s ease;
+        rotate: 370deg;
+    margin-left: 40px;
+    margin-top: 20px;
+    position: absolute;
+
+}
+.content{
+    width: 30px;
+    height: 40px;
+}
