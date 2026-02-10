@@ -1,0 +1,68 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    background-color: black;
+    color: white;
+    display: flex;
+    align-items: center;
+    background: rgb(31, 31, 31);
+    justify-content: center;
+}
+
+.container{
+    height: 300px;
+    width: 200px;
+    position: relative;
+}
+.container:hover .c1{
+    transform: translate(-30px, -20px)rotate(-5deg);
+}
+.container:hover .c2{
+    transform: translate(0px, 0px);
+}
+
+.container:hover .c3{
+    transform: translate(30px, 20px)rotate(5deg);
+}
+.container:hover .c4{
+    transform: translate(60px, 40px)rotate(8deg);
+}
+
+.card{
+     position: absolute;
+     width: 100%;
+     height: 100%;
+     border-radius: 15px;
+     border: 2px solid grey;
+     align-content: center;
+     text-align: center;
+     font-size: 2rem;
+     transition: transform 0.4s ease;
+}
+
+.c1{
+    background-color: rgb(97, 96, 96);
+    z-index: 4;
+}
+.c2{
+    background-color: rgb(168, 168, 168);
+    z-index: 3;
+}
+.c3{
+    background-color: rgb(229, 229, 229);
+    z-index: 2;
+}
+.c4{
+    background-color: rgb(229, 229, 229);
+    z-index: 1;
+}
+
+.c1 p{
+    text-align: end;
+    margin-bottom: 70px;
+}
