@@ -1,0 +1,149 @@
+*{
+    margin: 0px;
+    padding: 0px;
+box-sizing: border-box;
+}
+body{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.continer{
+    background-color: rgba(206, 206, 228, 0.669);
+    height: 200vh;
+    width: 100vw;
+padding: 5vh ;
+}
+
+.nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+        padding: 0px 3vw;
+        font-size: 22px;
+        position: fixed;
+position: relative;
+}
+.nav h4{
+    color:rgb(70, 69, 69);
+}
+
+.nav h3{
+    font-size :20px;
+    color: white;
+    background-color: black;
+    border-radius: 999px;
+    padding: 5px 10px
+}
+.nav-text{
+    display: flex;
+    position: absolute;
+    justify-content: space-between;
+    align-items: center;
+    width: 40vw;
+    right: 3vw;
+}
+
+
+.labl{
+    display: flex;
+    font-size: 25px;
+    justify-content: center;
+    align-items: center;
+}
+
+.labl label:first-child{
+    font-weight: 800;
+    color: black;
+}
+.labl label:last-child{
+
+    font-weight: 800;
+    color: rgb(3, 190, 190);
+}
+
+ #pq{
+    display: flex;
+    align-items: center;
+    background-color: rgba(0, 255, 255, 0.217);
+    border: 1.5px solid aqua;
+width: fit-content;
+height: fit-content;
+border-radius: 999px;
+    color: rgb(3, 190, 190);
+font-size: 1.2rem;
+padding: 0px 10px;
+width: 180px;
+justify-content: center;
+text-align: center;
+margin-top: 5vh;
+
+}
+
+.content{
+    text-align: center;
+    margin-top: 5vh;
+    height: 75vh;
+display: grid;
+background: radial-gradient(circle at center, rgba(0, 255, 255, 0.267),rgba(206, 206, 228, 0)) ;
+/* justify-content: center; 
+align-items: center;    */
+}
+.labl2 label{
+font-size: 70px;
+line-height: 100px;
+}
+.labl2 label:first-child{
+        font-weight: 600;
+
+}
+
+.labl2 label:last-child{
+    color: rgb(3, 190, 190);
+    font-weight: 800;
+}
+
+.abc{
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+}
+
+
+
+#pqr{
+    width: 700px;
+    font-size: 21px;
+    color:rgb(70, 69, 69);
+}
+
+.btn{
+    display: flex;
+    width: 100vw;
+    justify-content: center;
+
+}
+.btn1{
+    border: none;
+    border-radius: 10px;
+    background-color:rgb(3, 190, 190) ;
+        font-size: 22px;
+        padding: 10px;
+        margin: 25px 4px;
+        height: 50px;
+
+}
+
+.btn2{
+    font-size: 22px;
+            height: 50px;
+
+    border: none;
+    border-radius: 10px;
+    border: 2px solid rgb(3, 190, 190);
+        color: rgb(3, 190, 190);
+        padding: 10px;
+        margin: 25px 4px;
+        background-color: rgba(240, 248, 255, 0.5);
+
+}
+
