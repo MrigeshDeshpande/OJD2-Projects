@@ -39,7 +39,7 @@ body{
 }
 
 .menu-btn{
-    
+    margin-bottom: 50px;
     transition: 0.3s;
     color: white;width: 50px;
     height: 50px;
@@ -189,9 +189,8 @@ h2 {
     background-color:whitesmoke ;
     text-align: start;
     padding: 100px 80px;
-    margin-bottom: 60px;
 }
-.line{
+.linn {
     width: 60px;
     height: 3px;
     background-color: aqua;
@@ -261,6 +260,7 @@ p{
     font-size: 15px;
 }
 .dis{
+    padding-top: 60px;
     display: flex;
     justify-content: center;
     gap: 90px;
@@ -334,6 +334,11 @@ h5 {
     padding: 8px;
     border-radius: 25px;
     margin-top: 10px;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+.btn:hover{
+    background-color: aqua;
 }
 .he {
      position: absolute;
@@ -366,6 +371,11 @@ h5 {
     border-radius: 25px;
     background: aqua;
     border: none;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+.btn-m:hover{
+    background-color: white;
 }
 .pem {
     color: white;
@@ -417,11 +427,12 @@ h5 {
     border-top-right-radius: 10px;
     transition: 0.4s;
     overflow: hidden;
+    border-radius: 10px;
     
 }
 .cardi:hover{
     transform: translateY(-8px);
-    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+     box-shadow: 1px 1px 10px ;
 
 }
 .picture {
@@ -461,4 +472,67 @@ p{
 .Ai {
     text-decoration: none;
     color: black;
+}
+.containerr{
+    height: 480px;
+   background: white;
+    justify-items: center;
+    align-content: center;
+}
+
+.faq-item{
+    background-color: rgba(255, 255, 255, 0.288);
+    width: 590px;
+    display: grid;
+}
+#faq4,#faq5{
+    display: none;
+}
+.divider{
+    height: 4px;
+    width: 70px;
+    background-color: aqua;
+    margin-bottom: 30px;
+    margin-top: 20px;
+}
+
+.faq-item{
+    cursor: pointer;
+}
+.faq-question {
+    display: block;
+    padding: 10px;
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #333;
+    position: relative;
+    cursor: pointer;
+    margin-bottom: 20px;
+}
+.faq-question::after{
+    content: "+";
+    position: absolute;
+    right: 8%;
+    transform: translateY(-50%);
+    color: rgb(0, 0, 0);
+    transition: transform 0.3s;
+    margin-top: 10px;
+}
+.faq-answers{
+    max-height: 0;
+    overflow: hidden;
+    background: rgb(211, 212, 193);
+}
+.faq-answer-content{
+    padding: 0 20px;
+    line-height: 1.6;
+    color: #333;
+}
+.faq-item input[type = "checkbox"]:checked~ .faq-question::after{
+    transform: translateY(-50%) rotate(45deg);
+}
+
+.faq-item input[type = "checkbox"]:checked~ .faq-answers{
+   max-height: 500px;
+   padding: 10px 0;
 }

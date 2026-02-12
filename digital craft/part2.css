@@ -1,0 +1,201 @@
+.sec1 {
+     height: 550px;
+     background-color: whitesmoke;
+     justify-items: center;
+     align-content: center;
+
+}
+.sec2{
+    height: 550px;
+     background-color: white;
+     align-content: center;
+}
+.c1{
+    display: flex;
+    gap: 30px;
+    }
+.div{
+    margin-bottom: 50px;
+}
+.boxe{
+    height: 150px;
+    width: 570px;
+    background: white;
+    border-left: 6px solid aqua;
+    padding: 20px;
+    border-radius: 20px;
+    transition: all 0.4s;
+}
+.boxe:hover{
+    transform: translateY(-8px);
+}
+.div {
+    height: 3px;
+    width: 60px;
+    background-color: aqua;
+    margin-top: 20px;
+}
+i{
+    color: gray;
+}
+.h4{
+    margin-top: 20px;
+}
+.scaled{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+}
+.form-scale{
+    background-color: white;
+    width: 400px;
+    border-radius: 20px;
+    height: 350px;
+    padding: 30px 20px;
+    margin-top: 100px;
+}
+.form-scale input{
+    background-color: white;
+    width: 100%;
+    padding: 16px 14px;
+    border-radius: var(--radius-md);
+    border: 1px solid grey;
+    font-size: 14px;
+    outline: none;
+    border:none;
+}
+.inp{
+    margin-top: 20px;
+}
+
+.field{
+     position: relative;
+    color: gray;
+}
+
+label{
+    position: absolute;
+    left: 0;
+    top: 50px;
+    transform: translateY(-50%);
+    font-size: 15px;
+    color: var(--text-muted);
+    padding: 0 6px;
+    transition: 0.2s;
+}
+
+.field input:focus + label,
+.field input:valid + label {
+     font-size: 15px;
+     bottom: -80px;
+     color: aqua;
+}
+.form-scale button{
+    display: grid;
+    background-color: aqua;
+    border: none;
+    width: 350px;
+    padding: 10px;
+    margin-top: 20px;
+    border-radius: 20px;
+}
+.field input,
+.field textarea{
+    width: 100%;
+    padding: 15px 0;
+    color: black;
+    border-bottom: 1.5px solid rgb(96, 96, 96);
+}
+.field input:focus,
+.field textarea:focus{
+     border-bottom-color: aqua;
+}
+.line{
+   height: 1px;
+    width: 350px;
+    background-color: rgb(75, 75, 75);
+}
+
+.theory-scale span{
+        margin-top: 10px;
+        display: grid;
+        background-color: black;
+        width: 120px;
+}
+.theory-scale p{
+     margin-left: 17px;
+    color: grey;
+}
+.theory-scale h1{
+    margin-right: 61%;
+}
+.li {
+    height: 1px;
+    width: 100%;
+    background-color: gray;
+}
+.scale {
+    height: 550px;
+    background-color: white;
+}
+.c{
+    margin-top: 40px;
+    margin-left: 200px;
+    display: flex;
+    gap: 10px;
+}
+.circle {
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    background-color: aqua;
+}
+.circlee {
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    background-color: aqua;
+    margin-top: 10px;
+}
+.d{
+    padding-bottom: 60px;
+    padding-top: 60px;
+}
+.lu{
+    height: 70px;
+    width: 3px;
+    background-color: aqua;
+    margin-left: 10px;
+}
+.lee{
+    height: 40px;
+    width: 3px;
+    background-color: aqua;
+    margin-left: 10px;
+}
+.p{
+    color: aqua;
+    font-size: 17px;
+}
+.pa{
+    color: aqua;
+    font-size: 17px;
+    margin-top: 30px;
+}
+.pe{
+     color: aqua;
+    font-size: 17px;
+    margin-top: 30px;
+}
+.hee{
+    text-align: center;
+    color: white;
+}
+.linee{
+    width: 60px;
+    height: 3px;
+    background-color: aqua;
+    margin-left: 650px;
+    margin-top: 20px;
+}
