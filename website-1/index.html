@@ -9,32 +9,325 @@
 </head>
 
 <body>
+
     <input type="checkbox" id="menu-toggle">
 
-    <div class="navbar">
-        <div class="logo">Skillyards</div>
+    <header class="navbar">
+        <div class="logo">SKILL<span>YARDS</span></div>
 
         <label for="menu-toggle" class="menu-btn">
-            <span class="hamburger">&#9776</span>
-            <span class="close">x</span>
+            <span class="hamburger">&#9776;</span>
+            <span class="close">✖</span>
         </label>
-    </div>
+    </header>
 
     <nav class="menu">
         <a href="#">Home</a>
-        <a href="#">Projects</a>
-        <a href="#">Services</a> 
-        <a href="#">Blog</a>
-        <a href="#">Settings</a>
-        <a href="#">Contact</a>
+        <a href="#projects">Projects</a>
+        <a href="#curriculum">Curriculum</a>
+        <a href="#pricing">Pricing</a>
+        <a href="#reviews">Testimonials</a>
+        <a href="#contact">Contact</a>
     </nav>
 
     <div class="overlay"></div>
 
-    <main class="content">
-        <h1>Skillyards</h1>
-        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iste excepturi amet beatae architecto dolor laborum ea enim molestiae quos doloribus placeat quae, adipisci officiis soluta omnis assumenda pariatur! Dolores, nemo. Perspiciatis dolorem, adipisci repudiandae possimus suscipit ratione. Eveniet, dolorem neque.</p>
+    <main>
+        <section class="hero">
+            <div class="hero-content">
+                <h1>Elevate Your <br>Digital Craft.</h1>
+                <p>Expert-led training and premium development services designed to launch your career into the future.
+                </p>
+                <div class="cta-group">
+                    <a href="#" class="btn btn-main">Get Started</a>
+                    <a href="#" class="btn btn-alt">Our Portfolio</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="stats">
+            <div class="stats-grid">
+                <div class="stat-item">
+                    <h2>500+</h2>
+                    <p>Students Trained</p>
+                </div>
+                <div class="stat-item">
+                    <h2>120+</h2>
+                    <p>Projects Delivered</p>
+                </div>
+                <div class="stat-item">
+                    <h2>15+</h2>
+                    <p>Industry Awards</p>
+                </div>
+                <div class="stat-item">
+                    <h2>98%</h2>
+                    <p>Success Rate</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects" style="padding: 100px 5%; background: #fff;">
+            <div class="section-title">
+                <h2>Featured Projects</h2>
+                <div></div>
+            </div>
+
+            <div class="grid">
+                <div class="project-card">
+                    <div class="project-img">
+                        <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=500&q=80"
+                            alt="E-commerce Project">
+                    </div>
+                    <div class="project-info">
+                        <span>Web App</span>
+                        <h3>E-com Dashboard</h3>
+                        <p>A full-stack React application with real-time analytics.</p>
+                        <a href="#" class="view-link">View Case Study →</a>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-img">
+                        <img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?auto=format&fit=crop&w=500&q=80"
+                            alt="SaaS Project">
+                    </div>
+                    <div class="project-info">
+                        <span>SaaS</span>
+                        <h3>DevFlow CRM</h3>
+                        <p>Custom CRM built for high-performance development teams.</p>
+                        <a href="#" class="view-link">View Case Study →</a>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-img">
+                        <img src="https://images.unsplash.com/photo-1551650975-87deedd944c3?auto=format&fit=crop&w=500&q=80"
+                            alt="Mobile UI">
+                    </div>
+                    <div class="project-info">
+                        <span>UI/UX</span>
+                        <h3>FinTech Mobile App</h3>
+                        <p>User-centric design focused on secure digital payments.</p>
+                        <a href="#" class="view-link">View Case Study →</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="curriculum" style="padding: 100px 5%; background: #111; color: white;">
+            <div class="section-title">
+                <h2 style="color: white;">Learning Path</h2>
+                <div></div>
+            </div>
+            <div style="max-width: 900px; margin: 0 auto;">
+                <div style="border-left: 2px solid var(--primary); padding-left: 30px; position: relative;">
+                    <div style="margin-bottom: 50px;">
+                        <span
+                            style="position: absolute; left: -9px; background: var(--primary); width: 16px; height: 16px; border-radius: 50%;"></span>
+                        <h3 style="color: var(--primary);">Phase 01: Foundations</h3>
+                        <p>Mastering Semantic HTML5, CSS3 Modern Layouts (Flex/Grid), and Responsive Design principles.
+                        </p>
+                    </div>
+                    <div style="margin-bottom: 50px;">
+                        <span
+                            style="position: absolute; left: -9px; background: var(--primary); width: 16px; height: 16px; border-radius: 50%;"></span>
+                        <h3 style="color: var(--primary);">Phase 02: Dynamic UI</h3>
+                        <p>Deep dive into Tailwind CSS v4, CSS Animations, and Component-based architecture.</p>
+                    </div>
+                    <div>
+                        <span
+                            style="position: absolute; left: -9px; background: var(--primary); width: 16px; height: 16px; border-radius: 50%;"></span>
+                        <h3 style="color: var(--primary);">Phase 03: Professional Portfolio</h3>
+                        <p>Building real-world client projects and optimizing for performance and SEO.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="pricing" class="pricing" style="padding: 100px 5%;">
+            <div class="section-title">
+                <h2>Course Tracks</h2>
+                <div></div>
+            </div>
+            <div class="grid">
+                <div class="card pricing-card">
+                    <h4>Starter</h4>
+                    <div class="price">₹0<span>/mo</span></div>
+                    <ul>
+                        <li>HTML/CSS Basics</li>
+                        <li>Community Support</li>
+                        <li>Weekly Projects</li>
+                    </ul>
+                    <a href="#" class="btn btn-alt" style="color:#111; border-color:#111;">Join Free</a>
+                </div>
+
+                <div class="card pricing-card featured">
+                    <div class="badge">Most Popular</div>
+                    <h4>Pro Dev</h4>
+                    <div class="price">₹4,999<span>/mo</span></div>
+                    <ul>
+                        <li>React & Node.js</li>
+                        <li>1-on-1 Mentorship</li>
+                        <li>Placement Support</li>
+                        <li>Portfolio Review</li>
+                    </ul>
+                    <a href="#" class="btn btn-main">Get Pro</a>
+                </div>
+
+                <div class="card pricing-card">
+                    <h4>Mastery</h4>
+                    <div class="price">₹9,999<span>/mo</span></div>
+                    <ul>
+                        <li>System Design</li>
+                        <li>Advanced DevOps</li>
+                        <li>Freelance Blueprint</li>
+                    </ul>
+                    <a href="#" class="btn btn-alt" style="color:#111; border-color:#111;">Go Master</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="services">
+            <div class="section-title">
+                <h2>Our Specialization</h2>
+                <div></div>
+            </div>
+
+            <div class="grid">
+                <div class="card">
+                    <h3>Web Development</h3>
+                    <p>We build lightning-fast, responsive websites using the latest modern frameworks and best
+                        practices.</p>
+                </div>
+                <div class="card">
+                    <h3>UI/UX Design</h3>
+                    <p>User-centric interfaces that are not only beautiful but intuitively functional for your
+                        customers.</p>
+                </div>
+                <div class="card">
+                    <h3>Technical Training</h3>
+                    <p>Hands-on workshops and courses to master frontend, backend, and fullstack development.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="contact-section" style="background: #f4f4f4; padding: 100px 5%;">
+            <div class="grid" style="align-items: center;">
+                <div>
+                    <h2 style="font-size: 3rem;">Ready to <br><span
+                            style="color: var(--primary); background: #111; padding: 0 10px;">Scale?</span></h2>
+                    <p style="margin-top: 20px; color: #666;">Drop us a message and our team at Skillyards will get back
+                        to you
+                        within 24 hours.</p>
+                </div>
+
+                <div class="card">
+                    <form class="floating-form">
+                        <div class="input-group">
+                            <input type="text" required>
+                            <label>Full Name</label>
+                        </div>
+                        <div class="input-group">
+                            <input type="email" required>
+                            <label>Email Address</label>
+                        </div>
+                        <div class="input-group">
+                            <textarea required rows="4"></textarea>
+                            <label>Project Details</label>
+                        </div>
+                        <button type="submit" class="btn btn-main"
+                            style="width: 100%; border: none; cursor: pointer;">Send
+                            Message</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <section id="reviews" style="padding: 100px 5%; background: #fff;">
+            <div class="section-title">
+                <h2>Student Success</h2>
+                <div></div>
+            </div>
+            <div class="grid">
+                <div class="card" style="border-left: 5px solid var(--primary);">
+                    <p style="font-style: italic; margin-bottom: 20px;">"The way complex CSS concepts were explained
+                        made it so
+                        easy for me to transition from a 12th-pass student to a junior dev."</p>
+                    <strong>- Aman Gupta</strong>
+                    <p style="font-size: 0.8rem;">Placement: TechSolutions</p>
+                </div>
+                <div class="card" style="border-left: 5px solid var(--primary);">
+                    <p style="font-style: italic; margin-bottom: 20px;">"Skillyards' focus on 'craft' rather than just
+                        coding is
+                        what sets them apart. Best mentorship in Agra."</p>
+                    <strong>- Priya Sharma</strong>
+                    <p style="font-size: 0.8rem;">Freelance UI Designer</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="faq" style="padding: 100px 5%; max-width: 800px; margin: 0 auto;">
+            <div class="section-title">
+                <h2>Common Questions</h2>
+                <div></div>
+            </div>
+
+            <div class="faq-item">
+                <input type="checkbox" id="faq1" class="faq-check">
+                <label for="faq1" class="faq-label">How long are the courses? <span>+</span></label>
+                <div class="faq-content">
+                    <p>Our typical bootcamp lasts 12-16 weeks depending on the track you choose.</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <input type="checkbox" id="faq2" class="faq-check">
+                <label for="faq2" class="faq-label">Do I get a certificate? <span>+</span></label>
+                <div class="faq-content">
+                    <p>Yes, upon successful completion and project submission, you receive a Skillyards Verified
+                        Certification.
+                    </p>
+                </div>
+            </div>
+        </section>
     </main>
+
+
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <div class="logo">SKILL<span>YARDS</span></div>
+                <p style="margin-top:20px;">Pushing the boundaries of digital craftsmanship since 2024.</p>
+            </div>
+            <div class="footer-section">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Our Services</a></li>
+                    <li><a href="#">Case Studies</a></li>
+                    <li><a href="#">Careers</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Support</h4>
+                <ul>
+                    <li><a href="#">Contact</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Terms of Service</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Newsletter</h4>
+                <p>Get the latest tech insights.</p>
+                <input type="email" placeholder="Email Address"
+                    style="width:100%; padding:10px; margin-top:10px; border-radius:5px; border:none; background:#222; color:white;">
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Skillyards Versatility Pvt Ltd. Built for Excellence.</p>
+        </div>
+    </footer>
 
 </body>
 
