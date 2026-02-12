@@ -80,7 +80,7 @@ h1{
     background-color: aqua;
     border: none;
     padding: 15px;
-     box-shadow: 1px 1px 10px aqua;
+     box-shadow: 0px 0px 5px aqua;
     border-radius: 10px;
    font-weight: 700;
    cursor: pointer;
@@ -104,6 +104,55 @@ h1{
       color: aqua;
       transform: translateY(-8px);
 }
+.joining{
+    align-content: center;
+    height: 600px;
+    background-color: rgb(252, 252, 241);
+}
+.container{
+    margin-top: 6%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: start;
+    gap: 30px;
+}
 
-
-
+.card{
+    background-color: rgb(255, 255, 255);
+    width: 280px;
+    height: 250px;
+    border-radius: 18px;
+    padding: 20px;
+    cursor: pointer;
+}
+.img{
+    background-color: #d9f5fa;
+    width: 40px;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    height: 40px;
+    border-radius: 8px;
+    fill: aqua;
+}
+.img:hover{
+    background-color: aqua;
+    fill: white;
+}
+.card h3, p{
+   margin-top: 20px;
+}
+.join{
+    font-size: 30px;
+    padding: 12px;
+    display: grid;
+    justify-content: center;
+}
+.divider{
+    height: 5px;
+    width: 60px;
+    border-radius: 3px;
+    background-color: aqua;
+    margin: 20px auto;
+}
