@@ -5,23 +5,28 @@ box-sizing: border-box;
 }
 body{
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: rgba(225, 228, 206, 0.564);
 }
 
 .continer{
-    background-color: rgba(206, 206, 228, 0.669);
     height: 200vh;
     width: 100vw;
-padding: 5vh ;
+padding: 5vh 3vw ;
 }
 
 .nav{
     display: flex;
     justify-content: space-between;
     align-items: center;
-        padding: 0px 3vw;
-        font-size: 22px;
-        position: fixed;
-position: relative;
+    padding: 0px 3vw;
+    font-size: 22px;
+    position: relative;
+}
+
+.nav2{
+    position:fixed;
+    top: 5vh;
+    left: 3vw;
 }
 .nav h4{
     color:rgb(70, 69, 69);
@@ -40,7 +45,8 @@ position: relative;
     justify-content: space-between;
     align-items: center;
     width: 40vw;
-    right: 3vw;
+    margin-left: 50vw;
+
 }
 
 
@@ -145,5 +151,266 @@ line-height: 100px;
         margin: 25px 4px;
         background-color: rgba(240, 248, 255, 0.5);
 
+}
+
+.second-box h2{
+    margin-top: 25vh;
+    width: 100vw;
+    line-height: 70px;
+    text-align: center;
+    color: rgb(44, 42, 42);
+    font-size: 30px;
+}
+
+.line{
+    height: 6px;
+    width: 60px;
+    background-color: aqua;
+    margin-left: 47.5vw;
+    
+}
+
+.boxes{
+    display: flex;
+    width: 80vw;
+    justify-content: space-around;
+    margin: 0px auto;
+    margin-top: 12vh;
+}
+
+.boxes .icon{
+    font-size: 20px;
+    padding: 0px;
+    color: rgb(81, 183, 183);
+    background-color: rgba(0, 255, 255, 0.133);
+    font-weight: 800;
+    width: 30px;
+    border-radius: 5px;
+    padding: 0px 0px 0px 5px;
+    height: 30px;
+}
+
+.box h4{
+    line-height: 50px;
+    font-weight: 800;
+    font-size: 18px;
+}
+.box{
+    
+    border-radius: 20px;
+    background-color: white;
+    padding: 30px;
+    width: 320px;
+    box-shadow: 0px 0px 7px;
+}
+
+.box:hover .icon{
+    background-color: aqua;
+    color: white;
+}
+.flexs{
+    display: flex;
+    justify-content: space-between;
+}
+
+.first-txt p{
+    color: rgb(70, 67, 67);
+    font-size: 18px;
+} 
+
+.first-txt h3{
+
+}
+.openroles{
+    height: 100vh;
+    margin: 25vh 4vw ;
+}
+
+.flexss{
+    display: flex;
+}
+
+.flexss p{
+    color: aqua;
+    margin-left: 5px;
+    padding: 0px 5px;
+    border-radius: 4px;
+    background-color: rgba(55, 171, 171, 0.096);
+}
+.apply{
+    background-color: white;
+    padding: 15px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 15px;
+    margin-top: 4vh;
+    
+}
+
+.apply .p{
+    margin-right: 8px;
+    color: rgb(61, 56, 56);
+}
+.apply button{
+    background-color: rgb(20, 215, 215);
+    border: none;
+    padding: 4px 8px;
+    border-radius: 10px;
+    font-weight: 550;
+}
+
+.eng{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: space-between;
+}
+
+
+.eng1{
+    width: 14vw;
+}
+.eng2{
+width: 15.6vw;
+}
+.eng3{
+width: 18vw;
+}
+
+.eng4{
+width: 13.5vw;
+}
+
+.eng p{
+    color: rgb(58, 57, 57);
+}
+.aps{
+    display: flex;
+    align-items: center;
+}
+
+.lbl{
+    width: 100%;
+text-align: center;
+margin-top: 4vh;
+}
+
+.lbl label:first-child{
+    color: rgb(56, 54, 54);
+
+}
+
+.lbl label:last-child{
+    color: rgb(20, 215, 215);
+
+}
+
+
+.pic{
+
+position: relative;
+}
+
+.pic img{
+    border-radius: 10px;
+    width: 85%;
+    margin-left: 6vw;
+height: 45vh;
+margin-bottom: 15vh;
+}
+
+.pic .textt{
+    top: 5vh;
+position: absolute;
+}
+
+.textt{
+    width: 100%;
+    text-align: center;
+    padding: 5vh 55vh;
+}
+
+.textt h3{
+    color: white;
+    font-size: 35px;
+    line-height: 50px;
+}
+
+.textt p{
+    text-align: center;
+    color: rgb(177, 184, 190);
+}
+
+.lable{
+    display: flex;
+    font-size: 25px;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    left: px;
+}
+
+.lable label:first-child{
+    font-weight: 800;
+    color: black;
+}
+.lable label:last-child{
+
+    font-weight: 800;
+    color: rgb(3, 190, 190);
+}
+
+.footer{
+    position: absolute;
+    display: flex;
+    left: 0px;
+    background-color: rgba(201, 205, 174, 0.47);
+    width: 100vw;
+    height: 40vh;
+    padding: 20px 50px 0px 30px;
+    justify-content: space-between;
+}
+.footer #pqr{
+    width: 270px;
+    margin-top: 40px;
+    color: rgb(79, 75, 75);
+}
+
+.company p{
+    color: rgb(79, 75, 75);
+    line-height: 35px;
+}
+
+.flex{
+    font-size: 30px;
+    display: flex;
+}
+
+.flex p{
+    background-color: rgb(20, 215, 215);
+    border-radius: 5px;
+    margin-left: 5px;
+    padding: 0px 2px;
+
+}
+
+
+.linen{
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    bottom: 50px;
+    width: 93%;
+}
+
+.nn{
+    display: flex;
+    justify-content: space-between;
+    width: 30%;
+}
+
+.linen p{
+    color: rgb(79, 75, 75);
 }
 
